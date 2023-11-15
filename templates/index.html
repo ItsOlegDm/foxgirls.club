@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Girls Club</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="/favicon.ico" alt="">
+            <a href="/"><h1>FOXGIRLS.CLUB</h1></a>
+            
+        </div>
+        <div class="right">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+              <li><a class="navmenuitem" href="/{{r_link}}" title="{{rating}} images">{{rating}}</a></li>
+              <li><a class="navmenuitem" href="/api/endpoints" target="_blank" title="API">API</a></li>
+              <li><a class="navmenuitem" href="#" onclick="alert('soon')" title="Telegram bot"><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="{{img_url}}" alt="" srcset="">
+            <br>
+            <a href="{{img_url}}" download class="download"><i class="fas fa-download"></i> Download image</a>
+            <span class="reload" onclick="location.reload();"><i class="fas fa-sync-alt"></i> Reload</span>
+        </div>
+    </div>
+
+    <footer>
+        <span>Made by <a href="https://itsolegdm.com">ItsOlegDm</a></span>
+    </footer>
+    
+</body>
+</html>
