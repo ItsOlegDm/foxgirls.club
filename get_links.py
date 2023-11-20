@@ -23,7 +23,7 @@ while True:
         item = {}
         item["link"] = post["file_url"]
         item["id"] = post["id"]
-        item["is_loli"] = True if "loli" in post["tag_string"] else False
+        item["is_loli"] = True if "loli" in post["tag_string"].split() else False
         id = post["id"]
         byte_id = id.to_bytes((id.bit_length() + 7) // 8, 'little')
         if post["rating"] == "e" or post["rating"] == "q":

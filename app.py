@@ -8,7 +8,7 @@ import aiohttp_jinja2
 import jinja2
 from pathlib import Path
 
-DOMAIN = "https://foxgirls.club/"
+DOMAIN = "http://localhost:3010/"
 
 here = Path(__file__).resolve().parent
 db = []
@@ -98,7 +98,8 @@ async def handle_index(request: RequestInfo):
     vars = {
     'img_url': "/images/"+img[0],
     'rating': "NSFW" if type == "sfw" else "SFW",
-    'r_link': "nsfw" if type == "sfw" else "sfw"
+    'r_link': "nsfw" if type == "sfw" else "sfw",
+    'domain': DOMAIN
     }
     return vars
 

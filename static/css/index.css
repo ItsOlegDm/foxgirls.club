@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 a {
@@ -64,11 +65,22 @@ a.navmenuitem:hover, .navbar h1:hover, .download:hover, .reload:hover, footer a:
     justify-content: center;
     align-items: center;
     /* margin-top: 55px; */
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px
 }
 
 div.image>img {
     max-height: calc(100vh - 250px);
     max-width: 80vw;
+    border-radius: 5px;
 }
 .download {
     color: #7b7b7b;
