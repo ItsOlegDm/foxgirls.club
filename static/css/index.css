@@ -37,7 +37,11 @@ a.navmenuitem {
     transition: .2s;
 }
 
-a.navmenuitem:hover, .navbar h1:hover, .download:hover, .reload:hover, footer a:hover {
+a.navmenuitem:hover,
+.navbar h1:hover,
+.download:hover,
+.reload:hover,
+footer a:hover {
     color: #de6161;
 }
 
@@ -51,10 +55,12 @@ a.navmenuitem:hover, .navbar h1:hover, .download:hover, .reload:hover, footer a:
     display: flex;
     align-items: center;
 }
+
 .navbar>.left img {
     height: 30px;
     margin-right: 10px;
 }
+
 .navbar>.right {
     margin-right: 20px;
 }
@@ -82,12 +88,14 @@ div.image>img {
     max-width: 80vw;
     border-radius: 5px;
 }
+
 .download {
     color: #7b7b7b;
     transition: .2s;
     margin-left: 5px;
     font-size: 14px;
 }
+
 .reload {
     float: right;
     margin-right: 5px;
@@ -113,5 +121,3 @@ footer>span {
     transition: .2s;
     font-size: 14px;
 }
-
-
